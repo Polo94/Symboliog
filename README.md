@@ -1,7 +1,6 @@
-# README
+# Symboliog app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Portfolio de ouf incoming ... !
 
 Things you may want to cover:
 
