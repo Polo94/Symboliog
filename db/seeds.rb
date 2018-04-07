@@ -20,7 +20,6 @@ puts "3 topics created"
   topic_id: Topic.last.id
   )
 end
-
 puts "10 blog posts created"
 
 5.times do |skill|
@@ -29,7 +28,6 @@ puts "10 blog posts created"
     percent_utilized: 75
   )
 end
-
 puts "5 skills created"
 
 6.times do |portfolio_item|
@@ -53,3 +51,10 @@ end
 end
 
 puts "7 portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology: #{technology} "
+  )
+end
+puts "3 technologies created"
