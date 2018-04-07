@@ -2,6 +2,7 @@ class PortfoliosController < ApplicationController
 
   def index
     @portfolio_items = Portfolio.all
+    @page_title = "Our Portfolio"
   end
 
   def javascript
@@ -43,6 +44,7 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
+    @page_title = @portfolio_item.title
   end
 
   def destroy
@@ -64,7 +66,7 @@ class PortfoliosController < ApplicationController
     params.require(:portfolio).permit(
       :title,
       :subtitle,
-      :body, 
+      :body,
       technologies_attributes: [:name]
     )
   end
